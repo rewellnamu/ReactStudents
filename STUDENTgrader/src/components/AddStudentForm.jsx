@@ -45,7 +45,7 @@ const AddStudentForm = ({ selectedStudent, onSave }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className='form-user' onSubmit={handleSubmit}>
       <h2>{selectedStudent ? 'Edit Student' : 'Add Student'}</h2>
       <input value={name} onChange={e => setName(e.target.value)} placeholder="Student Name" required />
       {subjects.map((s, i) => (

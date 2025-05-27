@@ -36,8 +36,8 @@ const StudentList = ({ onEdit, refresh }) => {
   };
 
   return (
-    <div>
-      <h2>All Students</h2>
+    <div className="student-page">
+      <h2></h2>
       {students.map((student) => (
         <div key={student._id} style={{ border: '1px solid #ccc', padding: '10px', margin: '10px' }}>
           <h3>{student.name}</h3>
